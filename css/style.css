@@ -4,3 +4,7 @@
   width: 90% !important;
   border: #f4f4f4 3px solid !important;
 }
+
+.text-shadow {
+  text-shadow: 2px 2px 2px #000;
+}
