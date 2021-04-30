@@ -13,6 +13,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
     />
+    <link rel="stylesheet" href="/css/style.css" />
 
     <script
       defer
@@ -23,7 +24,7 @@
 
     <title>Materialize Travel</title>
   </head>
-  <body>
+  <body id="home" class="scrollspy">
     <!-- NavBar -->
     <div class="navbar-fixed">
       <nav class="blue">
@@ -113,8 +114,24 @@
     <!-- Search Section -->
     <section
       id="search"
-      class="section section-search blue darken-1 white-text center scrollspy"
-    ></section>
+      class="section section-search blue darken-3 white-text center scrollspy"
+    >
+      <div class="container">
+        <div class="row">
+          <div class="col s12">
+            <h3>Search Destinations</h3>
+            <div class="input-field">
+              <input
+                type="text"
+                id="autocomplete-input"
+                class="white grey-text autocomplete"
+                placeholder="Aruba, Cancun, etc..."
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- SideNav JS  -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
