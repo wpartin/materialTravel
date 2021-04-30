@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"
+      integrity="sha512-RXf+QSDCUQs5uwRKaDoXt55jygZZm2V++WUZduaU/Ui/9EGp3f/2KZVahFZBKGH0s774sd3HmrhUy+SgOFQLVQ=="
+      crossorigin="anonymous"
+    ></script>
+
+    <title>Materialize Travel</title>
+  </head>
+  <body>
+    <!-- NavBar -->
+    <div class="navbar-fixed">
+      <nav class="blue">
+        <div class="container">
+          <div class="nav-wrapper">
+            <a href="#" class="brand-logo">Materialize Travel</a>
+            <a href="#" data-target="mobile-nav" class="sidenav-trigger"
+              ><i class="material-icons">menu</i></a
+            >
+            <ul class="right hide-on-med-and-down">
+              <li>
+                <a href="#home">Home</a>
+              </li>
+              <li>
+                <a href="#search">Search</a>
+              </li>
+              <li>
+                <a href="#popular">Popular Places</a>
+              </li>
+              <li>
+                <a href="#gallery">Gallery</a>
+              </li>
+              <li>
+                <a href="#contact">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <ul class="sidenav" id="mobile-nav">
+      <li>
+        <a href="#home">Home</a>
+      </li>
+      <li>
+        <a href="#search">Search</a>
+      </li>
+      <li>
+        <a href="#popular">Popular Places</a>
+      </li>
+      <li>
+        <a href="#gallery">Gallery</a>
+      </li>
+      <li>
+        <a href="#contact">Contact</a>
+      </li>
+    </ul>
+
+    <!-- Slider Section -->
+
+    <section class="slider">
+      <ul class="slides">
+        <li>
+          <img src="img/resort1.jpg" />
+          <div class="caption center-align">
+            <h2>Your Dream Vacation Starts Here</h2>
+            <h5 class="light grey-text text-lighten-3 hide-on-small-only">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae,
+              quis.
+            </h5>
+          </div>
+        </li>
+        <li>
+          <img src="img/resort2.jpg" />
+          <div class="caption left-align">
+            <h2>We Work With Any Budget</h2>
+            <h5 class="light grey-text text-lighten-3 hide-on-small-only">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Asperiores, non.
+            </h5>
+          </div>
+        </li>
+        <li>
+          <img src="img/resort3.jpg" />
+          <!-- random image -->
+          <div class="caption right-align">
+            <h2>Group & Individual Getaways</h2>
+            <h5 class="light grey-text text-lighten-3 hide-on-small-only">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Adipisci, doloremque?
+            </h5>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <!-- Search Section -->
+    <section
+      id="search"
+      class="section section-search blue darken-1 white-text center scrollspy"
+    ></section>
+
+    <!-- SideNav JS  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+      // SideNav
+      const sideNav = document.querySelector(".sidenav");
+      M.Sidenav.init(sideNav, {});
+      // Slider
+      const slider = document.querySelector(".slider");
+      M.Slider.init(slider, {
+        indicators: false,
+        height: 500,
+        transition: 500,
+        interval: 6000,
+      });
+    </script>
+  </body>
+</html>
