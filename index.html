@@ -240,6 +240,103 @@
       </div>
     </section>
 
+    <!-- Gallery Section -->
+    <section id="gallery" class="section section-gallery scrollspy">
+      <div class="container">
+        <h4 class="center"><span class="blue-text">Photo</span> Gallery</h4>
+        <div class="row">
+          <div class="col s12 m3">
+            <img
+              src="https://source.unsplash.com/1600x900/?beach"
+              alt="travel beaches"
+              class="materialboxed responsive-img"
+            />
+          </div>
+          <div class="col s12 m3">
+            <img
+              src="https://source.unsplash.com/1600x900/?travel"
+              alt="travel beaches"
+              class="materialboxed responsive-img"
+            />
+          </div>
+          <div class="col s12 m3">
+            <img
+              src="https://source.unsplash.com/1600x900/?nature"
+              alt="travel beaches"
+              class="materialboxed responsive-img"
+            />
+          </div>
+          <div class="col s12 m3">
+            <img
+              src="https://source.unsplash.com/1600x900/?city"
+              alt="travel beaches"
+              class="materialboxed responsive-img"
+            />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col s12 m3">
+            <img
+              src="https://source.unsplash.com/1600x900/?water"
+              alt="travel water"
+              class="materialboxed responsive-img"
+            />
+          </div>
+          <div class="col s12 m3">
+            <img
+              src="https://source.unsplash.com/1600x900/?building"
+              alt="travel buildings"
+              class="materialboxed responsive-img"
+            />
+          </div>
+          <div class="col s12 m3">
+            <img
+              src="https://source.unsplash.com/1600x900/?trees"
+              alt="travel trees"
+              class="materialboxed responsive-img"
+            />
+          </div>
+          <div class="col s12 m3">
+            <img
+              src="https://source.unsplash.com/1600x900/?cruise"
+              alt="travel cruise"
+              class="materialboxed responsive-img"
+            />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col s12 m3">
+            <img
+              src="https://source.unsplash.com/1600x900/?beaches"
+              alt="travel beaches"
+              class="materialboxed responsive-img"
+            />
+          </div>
+          <div class="col s12 m3">
+            <img
+              src="https://source.unsplash.com/1600x900/?traveling"
+              alt="traveling"
+              class="materialboxed responsive-img"
+            />
+          </div>
+          <div class="col s12 m3">
+            <img
+              src="https://source.unsplash.com/1600x900/?bridge"
+              alt="travel bridge"
+              class="materialboxed responsive-img"
+            />
+          </div>
+          <div class="col s12 m3">
+            <img
+              src="https://source.unsplash.com/1600x900/?sunset"
+              alt="travel sunset"
+              class="materialboxed responsive-img"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- SideNav JS  -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script>
@@ -267,6 +364,9 @@
           Europe: null,
         },
       });
+      // Material Boxed
+      const mb = document.querySelectorAll(".materialboxed");
+      M.Materialbox.init(mb, {});
     </script>
   </body>
 </html>
